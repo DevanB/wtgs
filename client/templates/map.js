@@ -1,10 +1,12 @@
 Template.map.onCreated(function () {
+    GoogleMaps.loadUtilityLibrary('client/lib/geolocationmarker-compiled.js');
     GoogleMaps.ready('map', function (map) {
 
         Tracker.autorun(function () {
             if (Session.get('userLat') && Session.get('userLon')) {
                 var relocate = new google.maps.LatLng(Session.get('userLat'), Session.get('userLon'));
                 map.instance.setCenter(relocate);
+                var GeoMarker = new GeolocationMarker(map.instance);
             }
         });
 
