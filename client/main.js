@@ -1,20 +1,17 @@
 Meteor.startup(function () {
     if ((!Session.get('userLat')) && (!Session.get('userLon'))) {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                Session.set('userLat', position.coords.latitude);
-                Session.set('userLon', position.coords.longitude);
-            }, function (error) {
-                //@TODO: Respond to geolocation error
+            Tracker.autorun(function () {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    Session.set('location', {latitude: position.coords.latitude, longitude: position.coords.longitude});
+                }, function (error) {
+                    console.dir(error); //@TODO: Handle geolocation error
+                });
             });
         } else {
             handleNoGeolocation(true); //@TODO: Write function to prompt for location
         }
     }
-    Tracker.autorun(function () {
-        if (Session.get('userLat') && Session.get('userLon')) {
-        }
-    });
 });
 function handleNoGeolocation(errorFlag) {
     if (errorFlag) {
@@ -22,5 +19,4 @@ function handleNoGeolocation(errorFlag) {
     } else {
         //Browser doesn't support geolocation.
     }
-
 }
