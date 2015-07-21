@@ -5,15 +5,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 twbs:bootstrap
 underscore
 fourseven:scss
-coffeescript
 ian:accounts-ui-bootstrap-3
 accounts-password
 iron:router
 sacha:spin
-dburles:google-maps
 meteortoys:allthings
-service-configuration

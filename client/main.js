@@ -11,9 +11,11 @@ Meteor.startup(function () {
             handleNoGeolocation(true); //@TODO: Write function to prompt for location
         }
     }
-    GoogleMaps.load();
+    Tracker.autorun(function () {
+        if (Session.get('userLat') && Session.get('userLon')) {
+        }
+    });
 });
-
 function handleNoGeolocation(errorFlag) {
     if (errorFlag) {
         //Geolocation failed.
