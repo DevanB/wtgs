@@ -25,7 +25,7 @@ Template.map.onRendered(function () {
                 // default maps
                 var default_OpenStreetMaps = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(this.map);
+                });
 
                 // optional maps #1
                 var Thunderforest_OpenCycleMap = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
@@ -37,6 +37,7 @@ Template.map.onRendered(function () {
                   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
                 });
 
+                // Which map do you actually want to use?
                 //default_OpenStreetMaps.addTo(this.map);
                 //Thunderforest_OpenCycleMap.addTo(this.map);
                 Esri_WorldTopoMap.addTo(this.map);
