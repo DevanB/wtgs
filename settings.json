@@ -1,0 +1,11 @@
+{
+  "public": {
+
+  },
+  "private": {
+		"MailChimp": {
+			"apiKey": "5d968ff40905ff334797bce9427ff964-us11",
+			"listId": "19049ef90c"
+		}
+	}
+}
