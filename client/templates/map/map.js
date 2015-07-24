@@ -4,69 +4,42 @@ Template.map.onCreated(function () {
 });
 
 Template.map.onRendered(function () {
+  this.autorun(function () {
+    if (Session.get('location') && Session.get('location').latitude) {
+      latitude = Session.get('location').latitude;
+      longitude = Session.get('location').longitude;
+      if (!this.mapRendered) {
+        this.map = L.map('map').setView([latitude, longitude], 10);
+        this.mapRendered = true;
 
-    var currentLocationType = L.icon({
-        iconUrl: 'TrackingDot.png',
-        shadowUrl: 'TrackingDot.png',
-        iconSize: [21, 23], // size of the icon
-        shadowSize: [0, 0], // size of the shadow
-        iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-        shadowAnchor: [0, 0],  // the same for the shadow
-        popupAnchor: [10, 0] // point from which the popup should open relative to the iconAnchor
-    });
+        var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+          attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+        }).addTo(this.map);
 
-    this.autorun(function () {
-        if (Session.get('location') && Session.get('location').latitude) {
-            latitude = Session.get('location').latitude;
-            longitude = Session.get('location').longitude;
-            if (!this.mapRendered) {
-                this.map = L.map('map').setView([latitude, longitude], 11); // I <3 prime numbers.
-                this.map.spin(true);
-                this.mapRendered = true;
-
-                var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-                          attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-                        }).addTo(this.map);
-
-                var geoJsonLayer = L.geoJson($mapData, {
-                  style: function (feature) {
-                    return feature.properties.style;
-                  },
-                  onEachFeature: function (feature, layer) {
-                    layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
-                  }
-                });
-
-                // Create a layer just for the markers,
-                // add all the markers to that layer (via geoJsonLayer),
-                // then add the markers layer to the map.
-                var markers = new L.MarkerClusterGroup();
-                markers.addLayer(geoJsonLayer);
-                this.map.addLayer(markers);
-
-                L.control.locate().addTo(this.map);
-
-                this.map.spin(false);
-            }
-            if (this.mapRendered) {
-                var latitude = Session.get('location').latitude;
-                var longitude = Session.get('location').longitude;
-                this.map.panTo(new L.LatLng(latitude, longitude));
-            }
-        }
-    });
-});
-
-Template.geocodeLocation.events({
-    'click #searchGeocodeLocationBtn': function(e){
-        e.preventDefault();
-        var searchValue = $("#location").val();
-        var googleGeocodeProvider = new L.GeoSearch.Provider.Google();
-        googleGeocodeProvider.GetLocations(searchValue, function (data) {
-            Session.set('location', {latitude: data[0].Y, longitude: data[0].X});
+        var geoJsonLayer = L.geoJson($mapData, {
+          style: function (feature) {
+            return feature.properties.style;
+          },
+          onEachFeature: function (feature, layer) {
+            layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
+          }
         });
-        //Until session is set, keep searching.
+
+        var markers = new L.MarkerClusterGroup();
+        markers.addLayer(geoJsonLayer);
+        this.map.addLayer(markers);
+
+        L.control.locate({
+          follow: false,
+          showPopup: true,
+          locateOptions: {maxZoom: 12}
+        }).addTo(this.map);
+      }
+      if (this.mapRendered) {
+        this.map.panTo(new L.LatLng(latitude, longitude));
+      }
     }
+  });
 });
 
 Template.map.onCreated(function() {
