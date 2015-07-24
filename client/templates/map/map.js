@@ -581,17 +581,6 @@ Template.map.onCreated(function() {
     {
       "type" : "Feature",
       "properties" : {
-        "name" : "The Shoals",
-        "popupContent" : "MISSING"
-       },
-     "geometry": {
-        "type" : "Point" ,
-        "coordinates" : [ -87.562802, 34.768526 ]
-      }
-    },
-    {
-      "type" : "Feature",
-      "properties" : {
         "name" : "Skymont Scout Reservatoin",
         "popupContent" : "MISSING"
        },
