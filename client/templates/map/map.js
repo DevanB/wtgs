@@ -9,7 +9,7 @@ Template.map.onRendered(function () {
       latitude = Session.get('location').latitude;
       longitude = Session.get('location').longitude;
       if (!this.mapRendered) {
-        this.map = L.map('map').setView([latitude, longitude], 10);
+        this.map = L.map('map').setView([latitude, longitude], 11);
         this.mapRendered = true;
 
         var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
@@ -17,10 +17,16 @@ Template.map.onRendered(function () {
         }).addTo(this.map);
 
         var geoJsonLayer = L.geoJson($mapData, {
+          pointToLayer: function(feature, latlng) {
+            marker = L.marker(latlng, {});
+            marker.options['title'] = feature.properties['name'];
+            return marker;
+          },
           style: function (feature) {
             return feature.properties.style;
           },
           onEachFeature: function (feature, layer) {
+            //layer.option['title'] = feature.properties.name;
             layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
           }
         });
@@ -39,6 +45,21 @@ Template.map.onRendered(function () {
         this.map.panTo(new L.LatLng(latitude, longitude));
       }
     }
+
+    this.map.on('move', function() {
+
+      var inBounds = [];
+      bounds = this.getBounds();
+
+      geoJsonLayer.eachLayer(function(marker){
+        if (bounds.contains(marker.getLatLng())) {
+          //console.log(marker.options.title + " is in bounds.");
+          inBounds.push(marker.options.title);
+        }
+      });
+
+      document.getElementById('coordinates').innerHTML = inBounds.join('\n');
+    });
   });
 });
 
