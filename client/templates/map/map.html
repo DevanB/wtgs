@@ -2,25 +2,3 @@
 	{{> splashPage}}
     <div id="map"></div>
 </template>
-
-<template name="geocodeLocation">
-	<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">Custom Search</h4>
-	      </div>
-	      <div class="modal-body">
-	        <form id="geocodeLocationForm">
-				<input type="text" id="location" placeholder="Enter your zip code or city and state..."/>
-			</form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" id="searchGeocodeLocationBtn" class="btn btn-primary">Search</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-</template>
