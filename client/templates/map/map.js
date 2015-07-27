@@ -5,60 +5,41 @@ Template.map.onCreated(function () {
 
 Template.map.onRendered(function () {
   this.autorun(function () {
-    if (Session.get('location') && Session.get('location').latitude) {
-      latitude = Session.get('location').latitude;
-      longitude = Session.get('location').longitude;
-      if (!this.mapRendered) {
-        this.map = L.map('map').setView([latitude, longitude], 11);
-        this.mapRendered = true;
+    if (!this.mapRendered) {
+      this.map = L.map('map').setView([39.028904, -98.647771], 5);
+      this.mapRendered = true;
 
-        var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-          attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-        }).addTo(this.map);
+      var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+      }).addTo(this.map);
 
-        var geoJsonLayer = L.geoJson($mapData, {
-          pointToLayer: function(feature, latlng) {
-            marker = L.marker(latlng, {});
-            marker.options['title'] = feature.properties['name'];
-            return marker;
-          },
-          style: function (feature) {
-            return feature.properties.style;
-          },
-          onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
-          }
-        });
-
-        var markers = new L.MarkerClusterGroup();
-        markers.addLayer(geoJsonLayer);
-        this.map.addLayer(markers);
-
-        L.control.locate({
-          follow: false,
-          showPopup: true,
-          locateOptions: {maxZoom: 12}
-        }).addTo(this.map);
-      }
-      if (this.mapRendered) {
-        this.map.panTo(new L.LatLng(latitude, longitude));
-      }
-    }
-
-    this.map.on('move', function() {
-
-      var inBounds = [];
-      bounds = this.getBounds();
-
-      geoJsonLayer.eachLayer(function(marker){
-        if (bounds.contains(marker.getLatLng())) {
-          //console.log(marker.options.title + " is in bounds.");
-          inBounds.push(marker.options.title);
+      var geoJsonLayer = L.geoJson($mapData, {
+        pointToLayer: function(feature, latlng) {
+          marker = L.marker(latlng, {});
+          marker.options['title'] = feature.properties['name'];
+          return marker;
+        },
+        style: function (feature) {
+          return feature.properties.style;
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
         }
       });
+      var markers = new L.MarkerClusterGroup();
+      markers.addLayer(geoJsonLayer);
+      this.map.addLayer(markers);
 
-      document.getElementById('coordinates').innerHTML = inBounds.join('\n');
-    });
+      L.control.locate({
+        follow: false,
+        showPopup: true,
+        locateOptions: {maxZoom: 12}
+      }).addTo(this.map);
+
+    }
+    if (this.mapRendered) {
+      this.map.panTo(new L.LatLng(latitude, longitude));
+    }
   });
 });
 

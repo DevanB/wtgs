@@ -18,9 +18,9 @@
 		          <div class="row">
 		            <div class="col-md-12">
 			            <div id="subscribeForm">
-							{{> MailChimpListSubscribe}}
-				  		</div>
-					</div>
+										{{> MailChimpListSubscribe}}
+				  				</div>
+								</div>
 		          </div>
 		          <div class="row">
 		            <div class="col-md-12">
@@ -32,4 +32,16 @@
 	    </div>
 	  </div>
 	</div>
+</template>
+
+<template name="MailChimpListSubscribe">
+    <form class="form-inline">
+	    {{#if message}}
+	        <p class="mailchimp-message">{{{message}}}</p>
+	    {{/if}}
+      <div class="form-group">
+          <input class="mailchimp-email form-control" type="email" placeholder="email@example.com"/>
+          <button class="mailchimp-subscribe btn btn-success" type="button">Subscribe</button>
+      </div>
+    </form>
 </template>
