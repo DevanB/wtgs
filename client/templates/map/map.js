@@ -432,7 +432,7 @@ Template.map.onCreated(function() {
     {
       "type" : "Feature",
       "properties" : {
-        "name" : "Greater Alabama Council - Huntsville",
+        "name" : "Greater Alabama Council - Birmingham",
         "popupContent" : "MISSING"
        },
      "geometry": {
@@ -443,7 +443,7 @@ Template.map.onCreated(function() {
     {
       "type" : "Feature",
       "properties" : {
-        "name" : "Greater Alabama Council - Birmingham",
+        "name" : "Greater Alabama Council - Huntsville",
         "popupContent" : "MISSING"
        },
      "geometry": {
@@ -672,8 +672,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -80.08
-    , 29.25 ]
+         "coordinates" : [ -103.25, 29.25 ]
       }
     },
     {
@@ -1008,7 +1007,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ 155
+         "coordinates" : [ -155
     , 58.5 ]
       }
     },
