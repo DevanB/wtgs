@@ -26,7 +26,6 @@ Template.map.onRendered(function () {
             return feature.properties.style;
           },
           onEachFeature: function (feature, layer) {
-            //layer.option['title'] = feature.properties.name;
             layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
           }
         });
