@@ -615,6 +615,701 @@ Template.map.onCreated(function() {
         "type" : "Point" ,
         "coordinates" : [ -85.6834828, 35.66547966 ]
       }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Acadia National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -68.21
+    , 44.35 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "American Samoa National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -170.68
+    , -14.25 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Arches National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -109.57
+    , 38.68 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Badlands National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -102.5
+    , 43.75 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Big Bend National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -80.08
+    , 29.25 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Black Canyon of the Gunnison National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -107.72
+    , 38.57 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Bryce Canyon National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -112.18
+    , 37.57 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Canyonlands National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -109.93
+    , 38.2 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Capitol Reef National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -111.17
+    , 38.2 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Carlsbad Caverns National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -104.44
+    , 32.17 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Channel Islands National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -119.42
+    , 34.01 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Congaree National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -80.78
+    , 33.78 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Crater Lake National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -122.1
+    , 42.94 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Cuyahoga Valley National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -81.55
+    , 41.24 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Death Valley National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -116.82
+    , 36.24 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Denali National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -150.5
+    , 63.33 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Dry Tortugas National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -82.87
+    , 24.63 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Everglades National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -80.93
+    , 25.32 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Gates of the Arctic National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -153.3
+    , 67.78 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Glacier National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -114
+    , 48.8 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Glacier Bay National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -137
+    , 58.5 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Grand Canyon National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -112.14
+    , 36.06 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Grand Teton National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -110.8
+    , 43.73 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Great Basin National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -114.3
+    , 38.98 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Great Sand Dunes National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -105.51
+    , 37.73 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Great Smoky Mountains National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -83.53
+    , 35.68 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Guadalupe Mountains National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -104.87
+    , 31.92 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Haleakala National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -156.17
+    , 20.72 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Hawaii Volcanoes National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -155.2
+    , 19.38 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Hot Springs National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -93.05
+    , 34.51 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Isle Royale National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -88.55
+    , 48.1 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Joshua Tree National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -115.9
+    , 33.79 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Katmai National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ 155
+    , 58.5 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Kenai Fjords National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -149.65
+    , 59.92 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Kings Canyon National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -118.55
+    , 36.8 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Kobuk Valley National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -159.28
+    , 67.55 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Lake Clark National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -153.42
+    , 60.97 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Lassen Volcanic National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -121.51
+    , 49.49 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Mammoth Cave National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -86.1
+    , 37.18 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Mesa Verda National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -108.49
+    , 37.18 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Mount Rainier National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -121.75
+    , 46.85 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "North Cascades National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -121.2
+    , 48.7 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Olympic National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -123.5
+    , 47.97 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Petrified Forest National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -109.78
+    , 35.07 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Pinnacles National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -121.16
+    , 36.48 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Redwood National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -124
+    , 41.3 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Rocky Mountain National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -105.58
+    , 40.4 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Saguaro National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -110.5
+    , 32.25 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Sequoia National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -118.68
+    , 36.48 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Shenendoah National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -78.35
+    , 38.53 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Theodore Roosevelt National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -103.45
+    , 48.97 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Virgin Islands National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -64.73
+    , 18.33 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Voyageurs National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -92.88
+    , 48.5 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Wind Cave National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -103.48
+    , 43.57 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Wrangell -- St. Elias National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -142
+    , 61 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Yellowstone National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -110.5
+    , 44.6 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Yosemite National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -119.5
+    , 37.83 ]
+      }
+    },
+    {
+      "type" : "Feature",
+      "properties" : {
+        "name" : "Zion National Park",
+        "popupContent" : "http://nps.gov/",
+      },
+      "geometry" : {
+         "type" : "Point",
+         "coordinates" : [ -113.05, 37.3 ]
+      }
     }
   ];
 });
