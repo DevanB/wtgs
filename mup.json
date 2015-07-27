@@ -6,7 +6,7 @@
       "username": "root",
       // "password": "password"
       // or pem file (ssh based authentication)
-      "pem": "~/.ssh/id_rsa"
+      // "pem": "~/.ssh/id_rsa"
     }
   ],
 
@@ -15,7 +15,7 @@
   "nodeVersion": "0.10.36",
   "setupPhantom": true,
 
-  // Show a progress bar during the upload of the bundle to the server. 
+  // Show a progress bar during the upload of the bundle to the server.
   "enableUploadProgressBar": true,
   "appName": "wtgs",
   "app": ".",
