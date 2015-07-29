@@ -1,0 +1,53 @@
+<template name="admin">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Administration Area</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        {{> adminNavigation}}
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        {{> adminStats}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="adminStats">
+  <div class="row">
+    <h4>Stats</h4>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      <p>Markers</p>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <p>Reviews</p>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <p>Users</p>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <p>Analytics</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <p>Review List</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p>Markers List</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p>Users List</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p>Issues List</p>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,7 @@
+<template name="markers">
+  <p><a href="{{pathFor 'createMarker'}}">Add Marker</a></p>
+  <p>Markers List</p>
+  {{#each markers}}
+    <p>{{marker.name}}</p>
+  {{/each}}
+</template>
