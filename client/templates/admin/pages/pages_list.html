@@ -1,6 +1,15 @@
 <template name="pagesList">
+	{{> addNewPageModal}}
 	<div class="pages">
-		List of Pages.
-		<a href="#">Add Page</a>
+		<h4 class="page-header">Pages</h4>
+		<a href="#" class="btn btn-success add-new-page" data-toggle="modal" data-target="#new-page-modal">Start a New Page</a>
+
+		<div class="list-group pages-list">
+			{{#each pages}}
+				<a class="list-group-item" href="{{pathFor 'editor'}}">{{title}}</a>
+			{{else}}
+				<p class="alert alert-warning">No pages yet, friend.</p>
+			{{/each}}
+		</div>
 	</div>
 </template>

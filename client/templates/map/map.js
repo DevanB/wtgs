@@ -1,6 +1,9 @@
 Template.map.onCreated(function () {
     L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
     this.mapRendered = false;
+    L.GeoIP.getPosition('', function(data){
+      Session.set('location', data);
+    });
 });
 
 Template.map.onRendered(function () {
