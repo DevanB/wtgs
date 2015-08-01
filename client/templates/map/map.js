@@ -7,6 +7,13 @@ Template.map.onCreated(function () {
 });
 
 Template.map.onRendered(function () {
+  Meteor.call("pageviewIncrement", "map", function(error, result) {
+    if (error) {
+      console.log(error.reason);
+    } else {
+      return;
+    }
+  });
   this.autorun(function () {
     if (Session.get('location') && Session.get('location').latitude) {
       latitude = Session.get('location').latitude;

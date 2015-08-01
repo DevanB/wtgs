@@ -21,3 +21,5 @@ deanius:promise
 themeteorchef:commonmark
 perak:codemirror
 reactive-var
+markdown
+momentjs:moment
