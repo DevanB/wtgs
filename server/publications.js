@@ -7,8 +7,9 @@ Meteor.publish('page', function(id){
   return Pages.find({"_id": id});
 });
 
-Meteor.publish('about-page', function(){
-  return Pages.find({"title": "About-WTGS"});
+Meteor.publish('find-page', function(title){
+  check(title, String);
+  return Pages.find({"title": title});
 });
 
 Meteor.publish('analytics', function(){

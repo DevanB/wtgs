@@ -1,5 +1,5 @@
 Template.about.onCreated(function(){
-  this.subscribe('about-page');
+  this.subscribe('find-page', 'About-WTGS');
 });
 
 Template.about.onRendered(function(){
