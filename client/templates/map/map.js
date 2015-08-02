@@ -1,9 +1,9 @@
 Template.map.onCreated(function () {
     L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
     this.mapRendered = false;
-    L.GeoIP.getPosition('', function(data){
-      Session.set('location', data);
-    });
+    // L.GeoIP.getPosition('', function(data){
+    //   Session.set('location', data);
+    // });
 });
 
 Template.map.onRendered(function () {
@@ -15,11 +15,12 @@ Template.map.onRendered(function () {
     }
   });
   this.autorun(function () {
-    if (Session.get('location') && Session.get('location').latitude) {
-      latitude = Session.get('location').latitude;
-      longitude = Session.get('location').longitude;
+    // if (Session.get('location') && Session.get('location').latitude) {
+    //   latitude = Session.get('location').latitude;
+    //   longitude = Session.get('location').longitude;
       if (!this.mapRendered) {
-        this.map = L.map('map').setView([latitude, longitude], 11);
+        // this.map = L.map('map').setView([latitude, longitude], 11);
+        this.map = L.map('map').setView([39.028904, -98.647771], 5);
         this.mapRendered = true;
 
         var Esri_WorldTopoMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
@@ -36,7 +37,6 @@ Template.map.onRendered(function () {
             return feature.properties.style;
           },
           onEachFeature: function (feature, layer) {
-            //layer.option['title'] = feature.properties.name;
             layer.bindPopup(feature.properties.name + "<br>More Info: <a href=" + feature.properties.popupContent + ">" + feature.properties.popupContent + "</a>");
           }
         });
@@ -54,22 +54,20 @@ Template.map.onRendered(function () {
       if (this.mapRendered) {
         this.map.panTo(new L.LatLng(latitude, longitude));
       }
-    }
-
-    this.map.on('move', function() {
-
-      var inBounds = [];
-      bounds = this.getBounds();
-
-      geoJsonLayer.eachLayer(function(marker){
-        if (bounds.contains(marker.getLatLng())) {
-          //console.log(marker.options.title + " is in bounds.");
-          inBounds.push(marker.options.title);
-        }
-      });
-
-      document.getElementById('coordinates').innerHTML = inBounds.join('\n');
-    });
+    // this.map.on('move', function() {
+    //
+    //   var inBounds = [];
+    //   bounds = this.getBounds();
+    //
+    //   geoJsonLayer.eachLayer(function(marker){
+    //     if (bounds.contains(marker.getLatLng())) {
+    //       //console.log(marker.options.title + " is in bounds.");
+    //       inBounds.push(marker.options.title);
+    //     }
+    //   });
+    //
+    //   document.getElementById('coordinates').innerHTML = inBounds.join('\n');
+    // });
   });
 });
 

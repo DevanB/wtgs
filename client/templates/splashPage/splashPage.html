@@ -1,0 +1,49 @@
+<template name="splashPage">
+	<div class="modal subscribeModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="static">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+		    <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="gridSystemModalLabel">A "Where to Go Scouting" Guide for the 21st Century</h4>
+		    </div>
+		    <div class="modal-body text-left">
+		    	<div class="container-fluid">
+		          <div class="row">
+		          	<div class="col-md-12">
+		            	<p>Our mission is to create a fresh take on the age-old "Where to Go Camping" concept, which has become a invaluable tool for units throughout Scouting. Cub Scout Packs, Boy Scout Troops, and Venturing Crews all use these guides to find places to camp, hike, climb, ski, skate, work, play, and learn.</p>
+				<p>Our take on that idea is built on a modern platform, powered by current technology, and is as user-friendly as possible. Our goal is to build a tool that will become a critical resource for Scout units throughout all of Scouting.</p>
+				<p>We're creating a Where to Go Scouting Guide for the 21st Century, and we'll need your help to make it incredible.</p>
+				<p>This site is still under heavy development, but we're ready to show you a bit of a development preview. You can click the "X" in the top-right corner of this box to interact with the preview.</p>
+				<p>Give us your email address and we'll keep you updated as things progress. We hate spam as much as you do, so we promise to be responsible with your information.</p>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col-md-12">
+			            <div id="subscribeForm">
+										{{> MailChimpListSubscribe}}
+				  				</div>
+								</div>
+		          </div>
+		          <div class="row">
+		            <div class="col-md-12">
+		            	<h3>&nbsp;</h3>
+		            </div>
+		          </div>
+		        </div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+</template>
+
+<template name="MailChimpListSubscribe">
+    <form class="form-inline">
+	    {{#if message}}
+	        <p class="mailchimp-message">{{{message}}}</p>
+	    {{/if}}
+      <div class="form-group">
+          <input class="mailchimp-email form-control" type="email" placeholder="email@example.com"/>
+          <input type="submit" class="mailchimp-subscribe btn btn-success" value="Subscribe"/>
+      </div>
+    </form>
+</template>
