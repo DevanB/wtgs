@@ -1,0 +1,8 @@
+<template name="users">
+  <div class="container-fluid">
+    <h4>Users</h4>
+    {{#each users}}
+      {{_id}} - {{emails.[0].address}}<br/>
+    {{/each}}
+  </div>
+</template>
