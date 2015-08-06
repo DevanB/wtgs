@@ -52,7 +52,7 @@ Template.map.onRendered(function () {
         }).addTo(this.map);
       }
       if (this.mapRendered) {
-        this.map.panTo(new L.LatLng(latitude, longitude));
+        this.map.panTo(new L.LatLng(39.028904, -98.647771));
       }
     // this.map.on('move', function() {
     //
