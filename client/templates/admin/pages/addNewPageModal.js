@@ -10,6 +10,8 @@ Template.addNewPageModal.events({
     Meteor.call('pageCreate', title, function(error, response) {
       if ( error ) {
         throwError(error.reason);
+      } else if(response.pageExists === true) {
+        throwError("A page already exists with that title. Please choose a different title.")
       } else {
         Router.go("pageEdit", { _id: response });
         $('#new-document-modal').modal('hide');
