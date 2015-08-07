@@ -1,17 +1,24 @@
 <template name="pagesList">
+	{{> addNewPageModal}}
 	<div class="container-fluid">
-		{{> addNewPageModal}}
-		<div class="pages">
-			<h4 class="page-header">Pages</h4>
-			<a href="#" class="btn btn-success add-new-page" data-toggle="modal" data-target="#new-page-modal">Start a New Page</a>
-			<hr>
-			<div class="list-group pages-list">
-				{{#each pages}}
-					<a class="list-group-item" href="{{pathFor 'pageEdit'}}">{{title}}</a>
-				{{else}}
-					<p>No pages yet, friend.</p>
-				{{/each}}
-			</div>
-		</div>
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-2">
+	      {{> adminNavigation}}
+	    </div>
+	    <div class="col-xs-12 col-sm-10">
+				<div class="pages">
+					<h4 class="page-header">Pages</h4>
+					<a href="#" class="btn btn-success add-new-page" data-toggle="modal" data-target="#new-page-modal">Start a New Page</a>
+					<hr>
+					<div class="list-group pages-list">
+						{{#each pages}}
+							<a class="list-group-item" href="{{pathFor 'pageEdit'}}">{{title}}</a>
+						{{else}}
+							<p>No pages yet, friend.</p>
+						{{/each}}
+					</div>
+				</div>
+	    </div>
+	  </div>
 	</div>
 </template>

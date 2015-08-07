@@ -1,0 +1,71 @@
+<template name="stats">
+  <div class="row">
+    <a href="{{pathFor 'markers'}}">
+      <div class="col-xs-12 col-sm-3">
+        <div class="statistic-widget">
+    	    <span class="stat-icon bg-purple">
+    	    	<i class="fa fa-map-marker"></i>
+    	    </span>
+    	    <div class="stat-info">
+  	        <span>{{markerCount}}</span>
+            <small class="text-upper">Markers</small>
+    	    </div>
+  	    </div>
+      </div>
+    </a>
+    <a href="{{pathFor 'reviews'}}">
+      <div class="col-xs-12 col-sm-3">
+        <div class="statistic-widget">
+    	    <span class="stat-icon bg-red">
+    	    	<i class="fa fa-pencil-square-o"></i>
+    	    </span>
+    	    <div class="stat-info">
+  	        <span>{{reviewCount}}</span>
+            <small class="text-upper">Reviews</small>
+    	    </div>
+  	    </div>
+      </div>
+    </a>
+    <a href="{{pathFor 'users'}}">
+      <div class="col-xs-12 col-sm-3">
+        <div class="statistic-widget">
+    	    <span class="stat-icon bg-info">
+    	    	<i class="fa fa-users"></i>
+    	    </span>
+    	    <div class="stat-info">
+  	        <span>{{userCount}}</span>
+            <small class="text-upper">Users</small>
+    	    </div>
+  	    </div>
+      </div>
+    </a>
+    <a href="{{pathFor 'analyticsList'}}">
+      <div class="col-xs-12 col-sm-3">
+        <div class="statistic-widget">
+    	    <span class="stat-icon bg-green">
+    	    	<i class="fa fa-line-chart"></i>
+    	    </span>
+    	    <div class="stat-info">
+  	        <span>{{pageViews}}</span>
+            <small class="text-upper">Map Views</small>
+    	    </div>
+  	    </div>
+      </div>
+    </a>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <p>Review List</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p>Markers List</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p>Users List</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p>Issues List</p>
+    </div>
+  </div>
+</template>

@@ -1,7 +1,16 @@
 <template name="markers">
-  <p><a href="{{pathFor 'createMarker'}}">Add Marker</a></p>
-  <p>Markers List</p>
-  {{#each markers}}
-    <p>{{marker.name}}</p>
-  {{/each}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2">
+        {{> adminNavigation}}
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <p><a href="{{pathFor 'createMarker'}}">Add Marker</a></p>
+        <h4>Markers</h4>
+        {{#each markers}}
+          <p>{{marker.name}}</p>
+        {{/each}}
+      </div>
+    </div>
+  </div>
 </template>
