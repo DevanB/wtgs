@@ -66,3 +66,41 @@ Meteor.publish('all-reviews', function(){
     return;
   }
 });
+
+Meteor.publish('map-icons', function(){
+  if (Roles.userIsInRole(this.userId, ['admin'])) {
+    return MapIcons.find();
+  } else {
+    this.stop();
+    return;
+  }
+});
+
+Meteor.publish('find-type', function(id){
+  if (Roles.userIsInRole(this.userId, ['admin'])) {
+    check(id, String);
+    return Types.find({"_id": id});
+  } else {
+    this.stop();
+    return;
+  }
+});
+
+Meteor.publish('all-types', function(){
+  if (Roles.userIsInRole(this.userId, ['admin'])) {
+    return Types.find();
+  } else {
+    this.stop();
+    return;
+  }
+});
+
+Meteor.publish('find-map-icon', function(id){
+  if (Roles.userIsInRole(this.userId, ['admin'])) {
+    check(id, String);
+    return MapIcons.find({"_id": id});
+  } else {
+    this.stop();
+    return;
+  }
+});

@@ -1,0 +1,26 @@
+<template name="types">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Types</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-2">
+        {{> adminNavigation}}
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <div class="row">
+          <a class="btn btn-sm btn-success" href="{{pathFor 'typeCreate'}}"><i class="fa fa-plus"></i>&nbsp;Add Type</a>
+        </div>
+        <div class="row">
+          {{#each types}}
+            {{type}}
+            <a href="{{pathFor 'typeEdit'}}">Edit</a><br/>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,26 @@
+<template name="mapIcons">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Map Icons</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-2">
+        {{> adminNavigation}}
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <div class="row">
+          <a class="btn btn-sm btn-success" href="{{pathFor 'mapIconCreate'}}"><i class="fa fa-plus"></i>&nbsp;Add Map Icon</a>
+        </div>
+        <div class="row">
+          {{#each mapIcons}}
+            {{type}}
+            <a href="{{pathFor 'mapIconEdit'}}">Edit</a><br/>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

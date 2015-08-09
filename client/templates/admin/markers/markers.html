@@ -1,12 +1,17 @@
 <template name="markers">
   <div class="container-fluid">
     <div class="row">
+      <div class="col-xs-12">
+        <h3>Markers</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
       <div class="col-xs-12 col-sm-2">
         {{> adminNavigation}}
       </div>
       <div class="col-xs-12 col-sm-10">
-        <p><a href="{{pathFor 'createMarker'}}">Add Marker</a></p>
-        <h4>Markers</h4>
+        <p><a class="btn btn-sm btn-success" href="{{pathFor 'createMarker'}}"><i class="fa fa-plus"></i>&nbsp;Add Marker</a></p>
         {{#each markers}}
           <p>{{marker.name}}</p>
         {{/each}}

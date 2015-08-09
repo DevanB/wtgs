@@ -1,7 +1,9 @@
 <template name="adminNavigation">
   <ul class="nav nav-pills nav-stacked">
-    <li role="presentation"><a href="#">Dashboard</a></li>
+    <li role="presentation"><a href="{{pathFor 'admin'}}">Dashboard</a></li>
     <li role="presentation"><a href="{{pathFor 'markers'}}">Markers</a></li>
+    <li role="presentation"><a href="{{pathFor 'mapIcons'}}">Map Icons</a></li>
+    <li role="presentation"><a href="{{pathFor 'types'}}">Types</a></li>
     <li role="presentation"><a href="{{pathFor 'reviews'}}">Reviews</a></li>
     <li role="presentation"><a href="{{pathFor 'users'}}">Users</a></li>
     <li role="presentation"><a href="{{pathFor 'analyticsList'}}">Analytics</a></li>
