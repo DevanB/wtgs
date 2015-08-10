@@ -1,22 +1,27 @@
-Template.createMarker.onCreated(function(){
-  this.subscribe("all-types");
-  this.subscribe("all-map-icons");
+Template.editMarker.onCreated(function(){
+  this.subscribe('find-marker', Router.current().params._id);
+  this.subscribe('all-map-icons');
+  this.subscribe('all-types');
 });
 
-Template.createMarker.helpers({
-  types: function(){
+Template.editMarker.helpers({
+  mapIcons: function() {
+    return MapIcons.find();
+  },
+  types: function() {
     return Types.find();
   },
-  mapIcons: function(){
-    return MapIcons.find();
+  marker: function() {
+    return Markers.findOne();
   }
 });
 
-Template.createMarker.events({
+Template.editMarker.events({
   'submit form': function(e) {
     e.preventDefault();
 
     var marker = {
+      _id: Router.current().params._id,
       name: e.target.name.value,
       latitude: e.target.latitude.value,
       longitude: e.target.longitude.value,
@@ -34,13 +39,9 @@ Template.createMarker.events({
       // photo: e.target.photo.value
     };
 
-    Meteor.call('markerCreate', marker, function(error, result) {
+    Meteor.call('markerUpdate', marker, function(error, result) {
       if (error) {
         return throwError(error.reason);
-      }
-
-      if (result.markerExists) {
-        return throwError('This marker already exists');
       }
 
       Router.go('markers');

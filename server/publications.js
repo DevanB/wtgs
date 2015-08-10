@@ -3,7 +3,7 @@ Meteor.publish('find-page', function(title){
   return Pages.find({"title": title});
 });
 
-Meteor.publish('pages', function() {
+Meteor.publish('all-pages', function() {
   if (Roles.userIsInRole(this.userId, ['admin'])){
     return Pages.find();
   } else {
@@ -22,7 +22,7 @@ Meteor.publish('page', function(id){
   }
 });
 
-Meteor.publish('analytics', function(){
+Meteor.publish('all-analytics', function(){
   if (Roles.userIsInRole(this.userId, ['admin'])){
     return Analytics.find();
   } else {
@@ -57,6 +57,16 @@ Meteor.publish('all-markers', function(){
     return;
   }
 });
+
+Meteor.publish('find-marker', function(id) {
+  if (Roles.userIsInRole(this.userId, ['admin'])) {
+    check(id, String);
+    return Markers.find({"_id": id});
+  } else {
+    this.stop();
+    return;
+  }
+})
 
 Meteor.publish('all-reviews', function(){
   if (Roles.userIsInRole(this.userId, ['admin'])) {
@@ -94,6 +104,15 @@ Meteor.publish('all-types', function(){
     return;
   }
 });
+
+Meteor.publish('all-map-icons', function(){
+  if (Roles.userIsInRole(this.userId, ['admin'])) {
+    return MapIcons.find();
+  } else {
+    this.stop();
+    return;
+  }
+})
 
 Meteor.publish('find-map-icon', function(id){
   if (Roles.userIsInRole(this.userId, ['admin'])) {

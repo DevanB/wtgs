@@ -1,121 +1,149 @@
 <template name="createMarker">
-  <h2>Create Marker</h2>
-  <form class="">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label class="control-label" for="name">Name</label>
-          <div class="controls">
-            <input type="text" name="name" id="name" placeholder="Name"
-            class="form-control"/>
+  <div class="container-fluid">
+    <h2>Create Marker</h2>
+    <form class="">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+              <input type="text" name="name" id="name" placeholder="Name"
+              class="form-control"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="latitude">Latitude</label>
+              <div class="controls">
+                <input type="number" name="latitude" id="latitude" step="any" placeholder="Latitude"
+                class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="longitude">Longitude</label>
+              <div class="controls">
+                <input type="number" name="longitude" id="longitude" step="any" placeholder="Longitude"
+                class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="url">Url</label>
+            <div class="controls">
+              <input type="url" name="url" id="url" placeholder="Url"
+              class="form-control"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="mapIconType">Map Icon</label>
+              <div class="controls">
+                <select class="form-control" name="mapIconType" id="mapIconType">
+                  <option value=""></option>
+                  {{#each mapIcons}}
+                    <option value="{{_id}}">{{type}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="type">Type</label>
+              <div class="controls">
+                <select class="form-control" name="type" id="type">
+                  <option value=""></option>
+                  {{#each types}}
+                    <option value="{{_id}}">{{type}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="street">Street</label>
+            <div class="controls">
+              <input type="text" name="street" id="street" placeholder="Street"
+              class="form-control"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="city">City</label>
+              <div class="controls">
+                <input type="text" name="city" id="city" placeholder="City"
+                class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label class="control-label" for="state">State</label>
+              <div class="controls">
+                <input type="text" name="state" id="state" placeholder="State"
+                class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label class="control-label" for="zipCode">Zip Code</label>
+              <div class="controls">
+                <input type="text" name="zipCode" id="zipCode" placeholder="Zip Code"
+                class="form-control"/>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <label class="control-label" for="latitude">Latitude</label>
-          <div class="controls">
-            <input type="number" name="latitude" id="latitude" step="any" placeholder="Latitude"
-            class="form-control"/>
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="tags">Tags</label>
+              <div class="controls">
+                <input type="text" name="tags" id="tags" placeholder="Tags"
+                class="form-control"/>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="longitude">Longitude</label>
-          <div class="controls">
-            <input type="number" name="longitude" id="longitude" step="any" placeholder="Longitude"
-            class="form-control"/>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="needsReview">Needs Review</label>
+              <div class="controls">
+                <input type="checkbox" name="needsReview" id="needsReview" placeholder="Needs Review"
+                class="form-control"/>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="mapIconType">Map Icon  Type</label>
-          <div class="controls">
-            <input type="text" name="mapIconType" id="mapIconType" placeholder="Map Icon  Type"
-            class="form-control"/>
+          <div class="form-group">
+            <label class="control-label" for="description">Description</label>
+            <div class="controls">
+              <textarea name="description" id="description" placeholder="Description"
+              class="form-control" rows="5"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="type">Type</label>
-          <div class="controls">
-            <input type="text" name="type" id="type" placeholder="Type"
-            class="form-control"/>
+          <div class="form-group">
+            <label class="control-label" for="adminNotes">Admin Notes</label>
+            <div class="controls">
+              <textarea name="adminNotes" id="adminNotes" placeholder="Admin Notes"
+              class="form-control" rows="5"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="street">Street</label>
-          <div class="controls">
-            <input type="text" name="street" id="street" placeholder="Street"
-            class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="city">City</label>
-          <div class="controls">
-            <input type="text" name="city" id="city" placeholder="City"
-            class="form-control"/>
-          </div>
+          <!-- <div class="form-group">
+            <label class="control-label" for="photo">Photo</label>
+            <div class="controls">
+              <input type="text" name="photo" id="photo" placeholder="Photo"
+              class="form-control"/>
+            </div>
+          </div> -->
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label class="control-label" for="state">State</label>
-          <div class="controls">
-            <input type="text" name="state" id="state" placeholder="State"
-            class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="zipCode">Zip Code</label>
-          <div class="controls">
-            <input type="text" name="zipCode" id="zipCode" placeholder="Zip Code"
-            class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="description">Description</label>
-          <div class="controls">
-            <textarea name="description" id="description" placeholder="Description"
-            class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="url">Url</label>
-          <div class="controls">
-            <input type="url" name="url" id="url" placeholder="Url"
-            class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="adminNotes">Admin Notes</label>
-          <div class="controls">
-            <textarea name="adminNotes" id="adminNotes" placeholder="Admin Notes"
-            class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="tags">Tags</label>
-          <div class="controls">
-            <input type="text" name="tags" id="tags" placeholder="Tags"
-            class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="needsReview">Needs Review</label>
-          <div class="controls">
-            <input type="checkbox" name="needsReview" id="needsReview" value=true placeholder="Needs Review"
-            class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="photo">Photo</label>
-          <div class="controls">
-            <input type="text" name="photo" id="photo" placeholder="Photo"
-            class="form-control"/>
-          </div>
+      <div class="row">
+        <div class="col-md-12">
+          <input type="submit" value="Submit" class="btn btn-primary"/>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <input type="submit" value="Submit" class="btn btn-primary"/>
-      </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </template>

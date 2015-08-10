@@ -72,7 +72,6 @@ Template.map.onRendered(function () {
 });
 
 Template.map.onCreated(function() {
-  // TODO: this needs to be loaded from a file.
   $mapData = [
     {
       "type" : "Feature",
@@ -632,8 +631,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -68.21
-    , 44.35 ]
+         "coordinates" : [ -68.21, 44.35 ]
       }
     },
     {
@@ -644,8 +642,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -170.68
-    , -14.25 ]
+         "coordinates" : [ -170.68, -14.25 ]
       }
     },
     {
@@ -656,8 +653,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -109.57
-    , 38.68 ]
+         "coordinates" : [ -109.57, 38.68 ]
       }
     },
     {
@@ -668,8 +664,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -102.5
-    , 43.75 ]
+         "coordinates" : [ -102.5, 43.75 ]
       }
     },
     {
@@ -691,8 +686,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -107.72
-    , 38.57 ]
+         "coordinates" : [ -107.72, 38.57 ]
       }
     },
     {
@@ -703,8 +697,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -112.18
-    , 37.57 ]
+         "coordinates" : [ -112.18, 37.57 ]
       }
     },
     {
@@ -715,8 +708,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -109.93
-    , 38.2 ]
+         "coordinates" : [ -109.93, 38.2 ]
       }
     },
     {
@@ -727,8 +719,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -111.17
-    , 38.2 ]
+         "coordinates" : [ -111.17, 38.2 ]
       }
     },
     {
@@ -739,8 +730,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -104.44
-    , 32.17 ]
+         "coordinates" : [ -104.44, 32.17 ]
       }
     },
     {
@@ -751,8 +741,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -119.42
-    , 34.01 ]
+         "coordinates" : [ -119.42, 34.01 ]
       }
     },
     {
@@ -763,8 +752,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -80.78
-    , 33.78 ]
+         "coordinates" : [ -80.78, 33.78 ]
       }
     },
     {
@@ -775,8 +763,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -122.1
-    , 42.94 ]
+         "coordinates" : [ -122.1, 42.94 ]
       }
     },
     {
@@ -787,8 +774,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -81.55
-    , 41.24 ]
+         "coordinates" : [ -81.55, 41.24 ]
       }
     },
     {
@@ -799,8 +785,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -116.82
-    , 36.24 ]
+         "coordinates" : [ -116.82, 36.24 ]
       }
     },
     {
@@ -811,8 +796,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -150.5
-    , 63.33 ]
+         "coordinates" : [ -150.5, 63.33 ]
       }
     },
     {
@@ -823,8 +807,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -82.87
-    , 24.63 ]
+         "coordinates" : [ -82.87, 24.63 ]
       }
     },
     {
@@ -835,8 +818,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -80.93
-    , 25.32 ]
+         "coordinates" : [ -80.93, 25.32 ]
       }
     },
     {
@@ -847,8 +829,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -153.3
-    , 67.78 ]
+         "coordinates" : [ -153.3, 67.78 ]
       }
     },
     {
@@ -859,8 +840,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -114
-    , 48.8 ]
+         "coordinates" : [ -114, 48.8 ]
       }
     },
     {
@@ -871,8 +851,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -137
-    , 58.5 ]
+         "coordinates" : [ -137, 58.5 ]
       }
     },
     {
@@ -883,8 +862,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -112.14
-    , 36.06 ]
+         "coordinates" : [ -112.14, 36.06 ]
       }
     },
     {
@@ -895,8 +873,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -110.8
-    , 43.73 ]
+         "coordinates" : [ -110.8, 43.73 ]
       }
     },
     {
@@ -907,8 +884,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -114.3
-    , 38.98 ]
+         "coordinates" : [ -114.3, 38.98 ]
       }
     },
     {
@@ -919,8 +895,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -105.51
-    , 37.73 ]
+         "coordinates" : [ -105.51, 37.73 ]
       }
     },
     {
@@ -931,8 +906,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -83.53
-    , 35.68 ]
+         "coordinates" : [ -83.53, 35.68 ]
       }
     },
     {
@@ -943,8 +917,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -104.87
-    , 31.92 ]
+         "coordinates" : [ -104.87, 31.92 ]
       }
     },
     {
@@ -955,8 +928,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -156.17
-    , 20.72 ]
+         "coordinates" : [ -156.17, 20.72 ]
       }
     },
     {
@@ -967,8 +939,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -155.2
-    , 19.38 ]
+         "coordinates" : [ -155.2, 19.38 ]
       }
     },
     {
@@ -979,8 +950,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -93.05
-    , 34.51 ]
+         "coordinates" : [ -93.05, 34.51 ]
       }
     },
     {
@@ -991,8 +961,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -88.55
-    , 48.1 ]
+         "coordinates" : [ -88.55, 48.1 ]
       }
     },
     {
@@ -1003,8 +972,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -115.9
-    , 33.79 ]
+         "coordinates" : [ -115.9, 33.79 ]
       }
     },
     {
@@ -1015,8 +983,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -155
-    , 58.5 ]
+         "coordinates" : [ -155, 58.5 ]
       }
     },
     {
@@ -1027,8 +994,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -149.65
-    , 59.92 ]
+         "coordinates" : [ -149.65, 59.92 ]
       }
     },
     {
@@ -1039,8 +1005,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -118.55
-    , 36.8 ]
+         "coordinates" : [ -118.55, 36.8 ]
       }
     },
     {
@@ -1051,8 +1016,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -159.28
-    , 67.55 ]
+         "coordinates" : [ -159.28, 67.55 ]
       }
     },
     {
@@ -1063,8 +1027,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -153.42
-    , 60.97 ]
+         "coordinates" : [ -153.42, 60.97 ]
       }
     },
     {
@@ -1075,8 +1038,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -121.51
-    , 49.49 ]
+         "coordinates" : [ -121.51, 49.49 ]
       }
     },
     {
@@ -1087,8 +1049,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -86.1
-    , 37.18 ]
+         "coordinates" : [ -86.1, 37.18 ]
       }
     },
     {
@@ -1099,8 +1060,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -108.49
-    , 37.18 ]
+         "coordinates" : [ -108.49, 37.18 ]
       }
     },
     {
@@ -1111,8 +1071,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -121.75
-    , 46.85 ]
+         "coordinates" : [ -121.75, 46.85 ]
       }
     },
     {
@@ -1123,8 +1082,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -121.2
-    , 48.7 ]
+         "coordinates" : [ -121.2, 48.7 ]
       }
     },
     {
@@ -1135,8 +1093,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -123.5
-    , 47.97 ]
+         "coordinates" : [ -123.5, 47.97 ]
       }
     },
     {
@@ -1147,8 +1104,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -109.78
-    , 35.07 ]
+         "coordinates" : [ -109.78, 35.07 ]
       }
     },
     {
@@ -1159,8 +1115,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -121.16
-    , 36.48 ]
+         "coordinates" : [ -121.16, 36.48 ]
       }
     },
     {
@@ -1171,8 +1126,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -124
-    , 41.3 ]
+         "coordinates" : [ -124, 41.3 ]
       }
     },
     {
@@ -1183,8 +1137,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -105.58
-    , 40.4 ]
+         "coordinates" : [ -105.58, 40.4 ]
       }
     },
     {
@@ -1195,8 +1148,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -110.5
-    , 32.25 ]
+         "coordinates" : [ -110.5, 32.25 ]
       }
     },
     {
@@ -1207,8 +1159,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -118.68
-    , 36.48 ]
+         "coordinates" : [ -118.68, 36.48 ]
       }
     },
     {
@@ -1219,8 +1170,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -78.35
-    , 38.53 ]
+         "coordinates" : [ -78.35, 38.53 ]
       }
     },
     {
@@ -1231,8 +1181,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -103.45
-    , 48.97 ]
+         "coordinates" : [ -103.45, 48.97 ]
       }
     },
     {
@@ -1243,8 +1192,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -64.73
-    , 18.33 ]
+         "coordinates" : [ -64.73, 18.33 ]
       }
     },
     {
@@ -1255,8 +1203,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -92.88
-    , 48.5 ]
+         "coordinates" : [ -92.88, 48.5 ]
       }
     },
     {
@@ -1267,8 +1214,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -103.48
-    , 43.57 ]
+         "coordinates" : [ -103.48, 43.57 ]
       }
     },
     {
@@ -1279,8 +1225,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -142
-    , 61 ]
+         "coordinates" : [ -142, 61 ]
       }
     },
     {
@@ -1291,8 +1236,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -110.5
-    , 44.6 ]
+         "coordinates" : [ -110.5, 44.6 ]
       }
     },
     {
@@ -1303,8 +1247,7 @@ Template.map.onCreated(function() {
       },
       "geometry" : {
          "type" : "Point",
-         "coordinates" : [ -119.5
-    , 37.83 ]
+         "coordinates" : [ -119.5, 37.83 ]
       }
     },
     {
