@@ -40,10 +40,10 @@
             <div class="form-group">
               <label class="control-label" for="mapIconType">Map Icon Type</label>
               <div class="controls">
-                <select class="form-control" name="mapIconType" id="mapIconType" value="{{marker.mapIconType}}">
+                <select class="form-control" name="mapIconType" id="mapIconType">
                   <option value=""></option>
                   {{#each mapIcons}}
-                    <option value="{{_id}}">{{type}}</option>
+                    <option {{selectOption marker.mapIconType this._id}} value="{{_id}}">{{type}}</option>
                   {{/each}}
                 </select>
               </div>
@@ -56,7 +56,7 @@
                 <select class="form-control" name="type" id="type" value="{{marker.type}}">
                   <option value=""></option>
                   {{#each types}}
-                    <option value="{{_id}}">{{type}}</option>
+                    <option {{selectOption marker.type this._id}} value="{{_id}}">{{type}}</option>
                   {{/each}}
                 </select>
               </div>
